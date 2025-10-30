@@ -29,7 +29,7 @@ export default function VideoCall({ roomId }: { roomId: string }) {
 
   // Initialize socket connection
   useEffect(() => {
-    const socketInstance = io("http://10.81.100.85:3001");
+    const socketInstance = io("http://localhost:3001");
     setSocket(socketInstance);
 
     socketInstance.on("connect", () => {
